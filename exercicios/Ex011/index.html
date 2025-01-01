@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="Imagens/Foto-P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/Foto-M.png" type="image/png">
+        <img src="Imagens/Foto-G.png" alt="imagens flexiveis">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Mirage melody - Patrick Patrikios.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG--> <br>
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/Mirage melody - Patrick Patrikios.mp3" type="audio/mpeg">
+        <source src="midia/Mirage melody - Patrick Patrikios.ogg" type="audio/ogg">
+        <source src="midia/Mirage melody - Patrick Patrikios.wav" type="audio/wav">
+        <p>Não vai dar, <a href="midia/Mirage melody - Patrick Patrikios.mp3">só baixa ai</a></p>
+        <!--ordem de cima pra baixo!!-->
+    </audio>
+</body>
+</html>
