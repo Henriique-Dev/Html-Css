@@ -7,15 +7,16 @@
     font-size: 1em;
 }
 
-root{
-    --font1: 'verdana','Geneva' , 'tahoma', sans-serif;
-    --font2: 'passion One', 'cursive';
-    --font3: 'sriracha', 'cursive';
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", serif;
+    --font3: "Sriracha", serif;
 }
 
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header{
@@ -27,6 +28,8 @@ header{
 header > h1{
     font-variant: small-caps;
     padding-top: 50px;
+    font-family: var(--font2);
+    font-size: 10vw;
 }
 
 header > p{
@@ -47,6 +50,8 @@ section{
     padding-left: 30px;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    font-family: var(--font3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -54,9 +59,16 @@ section.normal{
     color: black;
 }
 
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.205);
+    display: inline-block;
+    padding: 5px;
+}
+
 section.imagem{
     background-color: rgb(75, 75, 75);
     color: white;
+
 }
 
 footer{
